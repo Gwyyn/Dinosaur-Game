@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.world {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.hightScore {
+    position: absolute;
+    font-size: 3vmin;
+    font-family: 'Oswald', sans-serif;
+    right: 30vmin;
+    top: 1vmin;
+}
+
+.score {
+    position: absolute;
+    font-size: 3vmin;
+    font-family: 'Oswald', sans-serif;
+    right: 1vmin;
+    top: 1vmin;
+}
+
+.start-screen {
+    position: absolute;
+    font-size: 2vmin;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.gameWelcome {
+    position: absolute;
+    font-size: 7vmin;
+    font-family: 'Silkscreen', cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+}
+
+.fps {
+    position: absolute;
+    font-size: 2vmin;
+    font-family: 'Oswald', sans-serif;
+    left: 1vmin;
+    top: 1vmin;
+}
+
+
+.hide {
+    display: none;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap'); */
+.gameover-text {
+    position: absolute;
+    font-size: 7vmin;
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+}
+
+.ground {
+    --left: 0;
+    position: absolute;
+    width: 300%;
+    bottom: 0;
+    left: calc(var(--left) * 1%)
+}
+
+.dino {
+    --bottom: 0;
+    position: absolute;
+    left: 1%;
+    height: 30%;
+    bottom: calc(var(--bottom) * 1%);
+}
+
+.cactus {
+    position: absolute;
+    left: calc(var(--left) * 1%);
+    height: 30%;
+    bottom: 0;
+}
